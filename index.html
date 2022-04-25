@@ -167,8 +167,113 @@
            letter-spacing: 1px;
            font-family: 'Nunito', sans-serif;
            font-size: 2rem;
+            }
+            
+        }  
+        
+        .ccontainer{
+            box-sizing: border-box;
+            background: #333;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-wrap: wrap;
+            z-index: 1;
+        }
+
+        
+        .ccontainer .card{
+            box-sizing: border-box;
+            
+            
+           
+            position: relative;
+            width: 280px;
+            height: 400px;
+            margin: 30px;
+            box-shadow: 20px 20px 50px rgb(36,36,36);
+            border-radius: 15px;
+            background: rgba(255, 255, 255, 0.1);
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+            border-left: 1px solid rgba(255, 255, 255, 0.5);
+            backdrop-filter: blur(5px);
+            
+            
+        }
+        .ccontainer .card .ccontent{
+            
+            padding: 20px;
+            text-align: center;
+            transition: 0.5s;
+            transform: translateY(100px);
+            opacity: 0;
+
+        }
+        .ccontainer .card:hover .ccontent{
+            
+            transform: translateY(0px);
+            opacity: 1;
+            
+        }
+        
+        .ccontainer .card .ccontent h2 { 
+            position: absolute;
+            top: -80px;
+            right: 30px;
+            font-size: 9em;
+            color: rgba(255, 125, 125, 0.05);
+            pointer-events: none;
+
+            
+        }
+        .ccontainer .card .ccontent h3 { 
+            font-size: 2.8em;
+            color: #fff;
+            z-index: 1;
+
+
+            
+        }
+        .ccontainer .card .ccontent p { 
+            font-size: 2em;
+            color: #fff;
+            z-index: 1;
+            font-weight: 300;
+
+            
+
+            
+        }
+        .ccontainer .card .ccontent a { 
+            position: relative;
+            display: inline-block;
+            padding: 8px 20px;
+            margin-top: 15px;
+            background: #f00;
+            color:rgb(255, 255, 255);
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 1.5em;
+            font-weight: 500;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+
+            
+        }
+       .contactme{
+           max-width: 50vw;
        }
-        }    
+       @media (max-width:1000px) {
+            .contactme{
+                max-width: 70vw;
+            }
+            
+        }  
+
     </style>
 
 </head>
@@ -218,29 +323,7 @@
 
     </div>
 
-    <!-- home section starts  -->
-
-    <!-- <section class="home" id="home">
-
-        <div class="content ">
-            <h3 class=>Hello There! Have a look around!</h3>
-            <p class="pageline">Know more about me on LinkedIn</p>
-            <a href="https://www.linkedin.com/in/ashutosh-deval-14b62919b/" target="_blank" class="btn">Connect</a>
-        </div>
-
-        <div class="controls">
-            <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-2.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-3.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-4.mp4"></span>
-            <span class="vid-btn" data-src="images/vid-5.mp4"></span>
-        </div>
-
-        <div class="video-container">
-            <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
-        </div>
-
-    </section> -->
+   
     <section class="topb home" id="#home">
         <div class="content ">
             <h3 class=>Hello There! Have a look around!</h3>
@@ -1763,18 +1846,7 @@
         </div>
 
     </section>
-    <!-- home section ends -->
-
-    <!-- book section starts  -->
-
-
-
-    <!-- book section ends -->
-
-    <!-- packages section starts  -->
-
-
-    <!-- services section starts  -->
+    
 
     <section class="services spbox" id="skills">
 
@@ -1796,9 +1868,6 @@
 
     </section>
 
-    <!-- services section ends -->
-
-    <!-- gallery section starts  -->
 
     <section class="gallery" id="projects">
 
@@ -1855,11 +1924,9 @@
 
     </section>
 
-    <!-- gallery section ends -->
+ 
 
-    <!-- review section starts  -->
-
-    <section class="cards" id="socials">
+    <section class="hcards" id="socials">
 
         <div class="swiper mySwiper container">
             <h1 class="heading">
@@ -1876,8 +1943,8 @@
 
 
 
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/linkedin.gif" alt="">
                         </div>
@@ -1900,8 +1967,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/github.gif" alt="">
                         </div>
@@ -1923,8 +1990,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/ccf.png" alt="">
                         </div>
@@ -1946,8 +2013,8 @@
 
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/twitter.gif" alt="">
                         </div>
@@ -1971,8 +2038,8 @@
 
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/insta.gif" alt="">
                         </div>
@@ -1994,8 +2061,8 @@
                         </a>
                     </div>
                 </div>
-                <div class="swiper-slide card">
-                    <div class="card-content">
+                <div class="swiper-slide hcard">
+                    <div class="hcard-content">
                         <div class="image">
                             <img src="images/mail.png" alt="">
                         </div>
@@ -2044,13 +2111,34 @@
             <span>t</span>
         </h1>
 
-        <div class="row">
+        <div class="row ccontainer">
 
-            <div class="image">
-                <img src="images/icons8-contacts.svg" alt="">
+            <div class="card">
+                <div class="ccontent">
+                    <h2>ME</h2>
+                    <h3>
+                        My Contact 
+                    </h3>
+                    <p>
+                        Email:
+                    </p>
+                    <p>
+                        ashutoshdevalskf@gmail.com
+                    </p>
+                    <p>
+                        Phone:
+                    </p>
+                    <p>
+                        +91 9105601496
+                    </p>
+                    <a href="https://www.linkedin.com/in/ashutosh-deval-14b62919b/">
+                        Connect
+                    </a>
+                    
+                </div>
             </div>
 
-            <form action="">
+            <form class="contactme" action="">
                 <div class="inputBox">
                     <input type="text" placeholder="name">
                     <input type="email" placeholder="email">
@@ -2174,12 +2262,33 @@
         });
 
         // Giving color to each text in sphere
-        var color = '#ff0000 ';
-        document.querySelector('.Sphere').style.color = color;
+        
+
     </script>
 
 
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script>
+        var color = '#ff0000 ';
+        document.querySelector('.Sphere').style.color = color;
 
+
+
+        VanillaTilt.init(document.querySelectorAll(".hcard"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
+    <script>
+        
+
+
+
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+    </script>
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/4b71c0a9ba.js" crossorigin="anonymous"></script>
