@@ -5,7 +5,7 @@
 }
 
 *{
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif ;
   margin:0; padding:0;
   box-sizing: border-box;
   text-transform: capitalize;
@@ -29,7 +29,7 @@ html{
 .box-container{
   margin: 1rem;
 }
-.cards{
+.hcards{
   padding:2rem 9%;
   margin: auto;
 }
@@ -659,7 +659,7 @@ form{
     padding:2rem;
   }
 
-  .cards{
+  .hcards{
     padding:2rem;
   }
 
@@ -712,7 +712,7 @@ form{
 
 
 
-.cards{
+.hcards{
   position: relative;  
   height: 450px;
   width: 50vw;
@@ -724,7 +724,7 @@ form{
   width: 950px;
 }
 
-.card{
+.hcard{
   position: relative;
   background: #fff;
   border-radius: .5rem;
@@ -732,7 +732,7 @@ form{
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.card::before{
+.hcard::before{
   content: "";
   position: absolute;
   height: 40%;
@@ -741,7 +741,7 @@ form{
   border-radius: .5rem .5rem 0 0;
 }
 
-.card .card-content{
+.hcard .hcard-content{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -750,7 +750,7 @@ form{
   z-index: 100;
 }
 
-.cards .card .image{
+.hcards .hcard .image{
   height: 140px;
   width: 140px;
   border-radius: 50%;
@@ -758,7 +758,7 @@ form{
   background: #e82a2a;
 }
 
-.cards .card .image img{
+.hcards .hcard .image img{
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -766,7 +766,7 @@ form{
   border: 3px solid #fff;
 }
 
-.card .media-icons{
+.hcard .media-icons{
   position: absolute;
   top: 10px;
   right: 20px;
@@ -775,7 +775,7 @@ form{
   align-items: center;
 }
 
-.card .media-icons i{
+.hcard .media-icons i{
   color: #fff;
   opacity: 0.6;
   margin-top: 10px;
@@ -783,11 +783,11 @@ form{
   cursor: pointer;
 }
 
-.card .media-icons i:hover{
+.hcard .media-icons i:hover{
   opacity: 1;
 }
 
-.card .name-profession{
+.hcard .name-profession{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -805,26 +805,26 @@ form{
   font-weight: 500;
 }
 
-.card .rating{
+.hcard .rating{
   display: flex;
   align-items: center;
   margin-top: 18px;
 }
 
-.card .rating i{
+.hcard .rating i{
   font-size: 18px;
   margin: 0 2px;
   color: #e82a2a;
 }
 
-.card .button{
+.hcard .button{
   width: 100%;
   display: flex;
   justify-content: space-around;
   margin-top: 20px;
 }
 
-.card .button button{
+.hcard .button button{
   background: #e82a2a;
   outline: none;
   border: none;
@@ -868,7 +868,7 @@ form{
   .swiper-button-prev{
     display: none;
   }
-  .cards{
+  .hcards{
     width: 80vw;
   }
   
