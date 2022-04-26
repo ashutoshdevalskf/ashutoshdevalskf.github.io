@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ghost animation </title>
+    <!-- link css -->
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+        * {
+          
+           margin: 0;
+           padding: 0;
+
+       }
+       html{
+        background: #352990
+       }
+       .container{
+           
+           
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           transform: translateY(0px);
+           animation: float 6s ease-in-out infinite;
+           height: 100vh;
+       }
+       .avatar{
+           width: 50vw;
+           height: 50vw;
+           box-sizing: border-box;
+           align-items: center;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+          
+           
+       }
+       img{
+           height: 50vw;
+           
+       }
+       h1{
+        font-family: 'Titillium Web', sans-serif;
+        color: #fe455d;
+        font-weight: bolder;
+        font-size: 4em;
+        text-align: center;
+        transform: translateY(-10vh);
+
+       }
+       h3{
+        font-family: 'Titillium Web', sans-serif;
+        color: white;
+        font-weight: bolder;
+        font-size: 2rem;
+        text-align: center;
+        transform: translateY(-10vh);
+        background: #fe6f48;
+        border-radius: 2rem;
+        width: 20vw;
+        margin: auto;
+        transition: 0.2s;
+        padding: .5rem;
+
+
+       }
+       h3:hover{
+           width: 25vw;
+           background: white;
+           color: #fe6f48;
+       }
+       a{
+        text-decoration: none;
+       }
+       @keyframes float{
+           
+        0%{
+               transform: translateY(-5vw);
+           }
+           50%{
+               transform: translateY(0vw);
+           }
+           100%{
+               transform: translateY(-5vw);
+           }
+       }
+      
+       
+         
+
+   </style>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="avatar">
+            <img src="404.png" alt="">
+        </div>
+        <div class="content">
+            <h1>
+                Page not found!
+            </h1>
+            <a href="index.html">
+            <h3>
+                Return To Home
+            </h3>
+        </a>
+        </div>
+    </div>
+</body>
+</html>
